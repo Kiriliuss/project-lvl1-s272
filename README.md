@@ -1,8 +1,8 @@
 # Brain Games SK
 
-[![Code Climate](https://codeclimate.com/github/hexlet-boilerplates/javascript-package/badges/gpa.svg)](https://codeclimate.com/github/hexlet-boilerplates/javascript-package)
-[![Issue Count](https://codeclimate.com/github/hexlet-boilerplates/javascript-package/badges/issue_count.svg)](https://codeclimate.com/github/hexlet-boilerplates/javascript-package)
-[![Build Status](https://travis-ci.org/hexlet-boilerplates/nodejs-package.svg?branch=master)](https://travis-ci.org/hexlet-boilerplates/nodejs-package)
+[![Code Climate](https://codeclimate.com/github/Kiriliuss/project-lvl1-s272/badges/gpa.svg)](https://codeclimate.com/github/Kiriliuss/project-lvl1-s272)
+[![Issue Count](https://codeclimate.com/github/Kiriliuss/project-lvl1-s272/badges/issue_count.svg)](https://codeclimate.com/github/Kiriliuss/project-lvl1-s272)
+[![Build Status](https://travis-ci.org/Kiriliuss/project-lvl1-s272.svg?branch=master)](https://travis-ci.org/Kiriliuss/project-lvl1-s272)
 
 ## Запуск
 
