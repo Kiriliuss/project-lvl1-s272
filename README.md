@@ -4,8 +4,8 @@
 [![Issue Count](https://codeclimate.com/github/Kiriliuss/project-lvl1-s272/badges/issue_count.svg)](https://codeclimate.com/github/Kiriliuss/project-lvl1-s272)
 [![Build Status](https://travis-ci.org/Kiriliuss/project-lvl1-s272.svg?branch=master)](https://travis-ci.org/Kiriliuss/project-lvl1-s272)
 
-## Запуск
+## Описание
 
 ```sh
-$ make start
+В рамках проекта необходимо реализовать набор мини-игр, запускаемых из консоли. Эти игры похожи на то, что обычно называют "Brain Games".
 ```
