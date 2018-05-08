@@ -1,7 +1,7 @@
 {
   "name": "brain-games-sk",
   "version": "0.0.2",
-  "description": "",
+  "description": "hexlet project 1 lvl",
   "main": "src/bin/brain-games.js",
   "bin": {
     "brain-games": "dist/bin/brain-games.js"
