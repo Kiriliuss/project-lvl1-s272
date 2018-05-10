@@ -6,8 +6,8 @@ node_js:
 script:
   - make lint
 
-before_script:
-  - npm install babel-cli -S
+install:
+  - npm install -g babel-cli
 
 deploy:
   provider: npm
