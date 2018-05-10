@@ -1,12 +1,12 @@
 // Игра проверка на четность.
-import { randomNumber, run } from '..';
+import run from '../process';
+import randomNumber from '../utils';
 
 const task = 'Answer "yes" if number even otherwise answer "no"';
+const isEven = number => ((number % 2) === 0);
 const gameData = () => {
-  const operand = randomNumber(0, 50);
-  const question = `${operand}`;
-  const isEven = number => ((number % 2) === 0);
-  const trueAnswer = isEven(operand) ? 'yes' : 'no';
+  const question = `${randomNumber(0, 50)}`;
+  const trueAnswer = isEven(question) ? 'yes' : 'no';
   return [question, trueAnswer];
 };
 
