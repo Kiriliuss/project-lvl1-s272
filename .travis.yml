@@ -5,3 +5,8 @@ node_js:
 
 script:
   - make lint
+
+deploy:
+  provider: npm
+  email: "kiriliuss@mail.ru"
+  api_key: "440ba389-5aac-45eb-a17c-d8f5a90f94b0"
