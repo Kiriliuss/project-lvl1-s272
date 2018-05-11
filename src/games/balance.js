@@ -14,10 +14,7 @@ const balance = (array) => {
   sortArray[sortArray.length - 1] -= 1;
   return balance(sortArray);
 };
-const numberToNumArray = (number) => {
-  const array = number.split('');
-  return array.map(Number);
-};
+const numberToNumArray = number => number.split('').map(Number);
 const gameData = () => {
   const question = `${randomNumber(10, 9999)}`;
   const trueAnswer = balance(numberToNumArray(question));
