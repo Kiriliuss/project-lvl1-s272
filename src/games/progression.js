@@ -1,0 +1,25 @@
+// Игра арифметическая прогрессия.
+import run from '../process';
+import randomNumber from '../utils';
+
+const task = 'What number is missing in this progression?';
+const makeArray = () => {
+  const arr = [...new Array(10)];
+  const up = randomNumber(1, 10);
+  const start = randomNumber(1, 10);
+  arr.map((num, index, array) => {
+    arr[index] = (index > 0) ? array[index - 1] + up : start;
+    return arr;
+  });
+  return arr;
+};
+const gameData = () => {
+  const newArray = makeArray();
+  const answerPos = randomNumber(0, 9);
+  const trueAnswer = `${newArray[answerPos]}`;
+  newArray[answerPos] = '..';
+  const question = newArray.join(' ');
+  return [question, trueAnswer];
+};
+
+export default () => run(gameData, task);
