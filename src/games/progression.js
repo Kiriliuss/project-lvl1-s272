@@ -7,11 +7,7 @@ const makeArray = () => {
   const arr = [...new Array(10)];
   const up = randomNumber(1, 10);
   const start = randomNumber(1, 10);
-  arr.map((num, index, array) => {
-    arr[index] = (index > 0) ? array[index - 1] + up : start;
-    return arr;
-  });
-  return arr;
+  return arr.map((num, index) => ((index > 0) ? start + (up * index) : start));
 };
 const gameData = () => {
   const newArray = makeArray();
