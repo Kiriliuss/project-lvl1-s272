@@ -3,13 +3,11 @@ import run from '../process';
 import randomNumber from '../utils';
 
 const task = 'Balance the given number.';
-const minNumber = array => Math.min(...array);
-const maxNumber = array => Math.max(...array);
 const balance = (newArray) => {
   const numArray = newArray;
-  while ((maxNumber(numArray) - minNumber(numArray)) > 1) {
-    const minPos = numArray.indexOf(minNumber(numArray));
-    const maxPos = numArray.indexOf(maxNumber(numArray));
+  while ((Math.max(...numArray) - Math.min(...numArray)) > 1) {
+    const minPos = numArray.indexOf(Math.min(...numArray));
+    const maxPos = numArray.indexOf(Math.max(...numArray));
     numArray[minPos] += 1;
     numArray[maxPos] -= 1;
   }
