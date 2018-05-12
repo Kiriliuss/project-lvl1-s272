@@ -7,7 +7,8 @@ const isPrime = (number) => {
   if (number < 2) {
     return false;
   }
-  for (let divisor = 2; divisor <= Math.round(Math.sqrt(number)); divisor += 1) {
+  const maxDivisor = Math.round(Math.sqrt(number));
+  for (let divisor = 2; divisor <= maxDivisor; divisor += 1) {
     if ((number % divisor) === 0) {
       return false;
     }
@@ -16,7 +17,7 @@ const isPrime = (number) => {
 };
 const gameData = () => {
   const question = `${randomNumber(0, 50)}`;
-  const trueAnswer = isPrime(question) ? 'yes' : 'no';
+  const trueAnswer = isPrime(Number(question)) ? 'yes' : 'no';
   return [question, trueAnswer];
 };
 
