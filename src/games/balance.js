@@ -5,8 +5,8 @@ import randomNumber from '../utils';
 const task = 'Balance the given number.';
 const balance = (array) => {
   const sortArray = array.sort((a, b) => a - b);
-  const minNumber = Math.min.apply(null, sortArray);
-  const maxNumber = Math.max.apply(null, sortArray);
+  const minNumber = sortArray[0];
+  const maxNumber = sortArray[sortArray.length - 1];
   if (maxNumber - minNumber <= 1) {
     return sortArray.join('');
   }
